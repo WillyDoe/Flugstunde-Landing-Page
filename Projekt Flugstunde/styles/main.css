@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    height: 100%;
+    background-color: grey;
+    background-image: linear-gradient(rgba(0, 0, 0 , 0.5), rgba(0, 0, 0 , 0.5)) ,url(../img/pexels-pixabay-45230.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Dosis', sans-serif;
+}
+
+@media (max-width: 1800px){
+    html{
+        background-position: 60% center;
+    }
+}
+
+@media (max-width: 1400px){
+    html{
+        background-position: 70% center;
+    }
+}
+
+@media (max-width: 700px){
+    html{
+        background-position: 60% center;
+    }
+}
+.logo{
+    max-width: 400px;
+    margin-top: 180px;
+    margin-bottom: 80px;
+    animation: flugzeug-flug 3s linear 0s both,
+            turbulenzen 2s linear 3s infinite none ;
+   
+}
+
+@keyframes flugzeug-flug{
+    0% {
+        transform: translate(-58vw, 0);
+        opacity: 0;
+    }
+
+    50%{
+        transform: translate(-29vw, 0);
+        opacity: 0.9;
+    }
+
+    100%{
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes turbulenzen{
+    0%, 100%{
+        transform: translate(0, 0);
+    }
+
+    33%{
+        transform: translate(0, -10px);
+    }
+
+    66%{
+        transform: translate(0, 10px);
+    }
+
+    
+}
+
+
+.header{
+    text-align: center;
+}
+
+.main{
+    text-align: center;
+    color: white;
+    font-size: 200%;
+}
+
+.main--heading{
+    padding-bottom: 10px;
+    text-shadow: 0px 0px 10px black;
+}
+
+.main--paragraph{
+    text-shadow: 0px 0px 10px black;
+}
+
+.button{
+    color: white;
+    text-decoration: none;
+    background-color: rgb(135, 111, 96);
+    padding: 15px 25px 15px 25px;
+    display: inline-block;
+    border-radius: 1000px;
+    font-weight: bold;
+    margin-top: 7rem;
+    box-shadow: 0px 0px 10px black;
+    transition: scale 0s;
+   
+}
+
+.button:hover{
+    background-image: radial-gradient(circle at 50% 50%, rgb(135, 111, 96) 1%, rgb(73, 58, 49) 1%);
+    background-size: 10000% 10000%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    box-shadow: 0 0 0;
+    transform: scale(0.95);
+    transition: background-size linear 0.15s;
+    text-decoration: underline;
+}
+
+.button:hover:active {
+    transition-duration: 0s;
+    background-size: 100% 100%;
+}
+
+
+
+
+@media (max-width: 768px){
+    .main{
+        font-size: 150%;
+    }
+
+    .logo{
+        max-width: 400px;
+        
+        animation: flugzeug-flug 3s linear 0s both,
+                turbulenzen 2s linear 3s infinite none ;
+       
+    }
+
+
+}
+
+@media (max-width: 576px){
+    .main{
+        font-size: 120%;
+    }
+
+    .logo{
+        max-width: 200px;
+        margin-top: 100px;
+        margin-bottom: 40px;
+        animation: flugzeug-flug 3s linear 0s both,
+                turbulenzen 2s linear 3s infinite none ;
+       
+    }
+
+
+}
+
